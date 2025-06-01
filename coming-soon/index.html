@@ -201,37 +201,44 @@
         /* Embedded Video */
         .video-wrapper {
     		display: flex;
-    		flex-direction: row;
     		align-items: center;
-    		justify-content: flex-start;
+    		justify-content: center;
     		gap: 20px;
-    		max-width: 900px;
-    		margin: 0 auto 20px auto;
-	}
-
-	.video-container {
-    		width: 480px;
-    		min-width: 320px;
-    		aspect-ratio: 16 / 9;
+    		max-width: 800px;
+    		margin: 0 auto;
+			flex-wrap: nowrap;
+        }
+        
+        .video-container {
+    		max-width: 600px;
+    		width: 90%;
+		aspect-ratio: 16 / 9;
     		background: #000;
     		border-radius: 15px;
     		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    		overflow: hidden;
-    		flex-shrink: 0;
+    		margin: 0 auto;
     		display: flex;
     		align-items: center;
     		justify-content: center;
-	}
+		overflow: hidden;
+        }
 
-	.video-title {
+	.video-container iframe {
 		width: 100%;
+		height: 100%;
+		border: 0;
+		border-radius: 15px;
+	}
+        
+        .video-title {
     		max-width: 300px;
     		display: flex;
     		flex-direction: column;
     		align-items: center;
-    		justify-content: center;
     		text-align: center;
-    		margin: 0 auto;
+    		word-wrap: break-word;
+    		overflow-wrap: break-word;
+            flex-shrink: 0;
 	}
 
 	.video-title h2 {
@@ -334,7 +341,7 @@
         <h2>Movies Coming Soon</h2>
         <div class="video-wrapper">
       		<div class="video-container">
-        		<iframe width="480" height="270" src="https://www.youtube.com/embed/hxPhS2OFFRE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        		<iframe width="560" height="315" src="https://www.youtube.com/embed/hxPhS2OFFRE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         	<div class="video-title">
         		<h2>Minecraft Legacy</h2>
@@ -344,7 +351,7 @@
 	<br>
 	<div class="video-wrapper">
 		<div class="video-container">
-			<iframe width="480" height="270" src="https://www.youtube.com/embed/XjsweVrRFlE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/XjsweVrRFlE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 		<div class="video-title">
 			<h2>The Among Us Movie</h2>
