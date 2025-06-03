@@ -125,6 +125,13 @@
             margin-bottom: 20px;
         }
 
+	.button-row {
+		display: flex;
+		justify-content: center;
+		gap: 25px;
+		margin-top: 20px;
+	}
+
         .home-button {
             display: inline-block;
             padding: 10px 20px;
@@ -179,8 +186,10 @@
 
     <section class="not-found">
         <h1>404: Page Not Found</h1>
-        <a href="./" class="home-button">Go To Productions Home</a>
-	<a href="https://www.thestrype.com" class="home-button">Go To Strype Home</a>
+	<div class="button-row">
+        	<a href="./" class="home-button">Go To Productions Home</a>
+		<a href="https://www.thestrype.com" class="home-button">Go To Strype Home</a>
+	</div>
     </section>
 </main>
 <footer class="footer">
