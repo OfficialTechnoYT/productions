@@ -78,6 +78,13 @@
             transition: background 0.3s ease, color 0.3s ease;
         }
 
+	.nav-separator {
+		width: 1px;
+		height: 20px;
+		background-color: white;
+		opacity: 0.5;
+	}
+
 	.nav-container .home {
 		color: white;
 	}
@@ -92,6 +99,18 @@
 
 	.nav-container .domore {
 		color: white;
+	}
+
+	.nav-container .productions-home {
+        	color: white;
+    	}
+    
+    	.nav-container .coming-soon {
+        	color: white;
+    	}
+
+	.nav-container .channel {
+		color: rgba(255, 70, 70, 1);
 	}
 
 	.nav-container .home:hover {
@@ -112,6 +131,21 @@
 	.nav-container .domore:hover {
 		background: white;
 		color: black;
+	}
+
+	.nav-container .productions-home:hover {
+        	background: white;
+        	color: black;
+    	}
+    
+    	.nav-container .coming-soon:hover {
+        	background: white;
+        	color: black;
+    	}
+
+	.nav-container .channel:hover {
+		background: rgba(255, 70, 70, 1);
+		color: white;
 	}
 
         /* 404 Section */
@@ -182,6 +216,10 @@
         <a href="https://techno.thestrype.com" class="techno">Techno</a>
         <a href="https://productions.thestrype.com" class="productions">Productions</a>
 	<a href="https://domore.thestrype.com" class="domore">DoMore</a>
+	<div class="nav-separator"></div>
+    	<a href="./" class="productions-home">Productions Home</a>
+    	<a href="/coming-soon" class="coming-soon">Coming Soon</a>
+	<a href="https://www.youtube.com/@TheStrype" class="channel">Channel</a>
     </div>
 
     <section class="not-found">
